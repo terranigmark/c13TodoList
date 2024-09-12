@@ -1,7 +1,14 @@
-
-
 class Task:
-    pass
+    def __init__(self, description):
+        self.description = description
+        self.completed = False
+
+    def complete(self):
+        self.completed = True
+
+    def __str__(self):
+        estado = "Completado" if self.completed else "Pendiente"
+        return f"{self.description} - {estado}"
 
 
 class TodoList:

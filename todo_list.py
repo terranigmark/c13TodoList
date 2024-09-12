@@ -12,7 +12,12 @@ class Task:
 
 
 class TodoList:
-    pass
+    def __init__(self):
+        self.tasks = []
+
+    def add_task(self, description):
+        task = Task(description)
+        self.tasks.append(task)
 
 
 def main():

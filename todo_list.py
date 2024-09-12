@@ -7,8 +7,8 @@ class Task:
         self.completed = True
 
     def __str__(self):
-        status = "Completado" if self.completed else "Pendiente"
-        return f"{self.description} - {status}"
+        estado = "Completado" if self.completed else "Pendiente"
+        return f"{self.description} - {estado}"
 
 
 class TodoList:
